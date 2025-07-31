@@ -92,7 +92,6 @@ xhost +local:docker
 docker-compose up -d
 docker-compose exec ros2-workspace bash
 ```
-
 ### 2. Install Dependencies and Build
 
 Inside the Docker container:
@@ -100,6 +99,14 @@ Inside the Docker container:
 ```bash
 # Install additional dependencies
 apt update && apt install -y libgoogle-glog-dev
+
+apt install -y \
+    gazebo \
+    ros-humble-gazebo-ros \
+    ros-humble-gazebo-ros-pkgs \
+    ros-humble-robot-state-publisher \
+    ros-humble-joint-state-publisher
+
 
 # Source ROS2 environment
 source /opt/ros/humble/setup.bash
@@ -132,3 +139,12 @@ source install/setup.bash
    rviz2
    ```
 
+
+
+# 🚀 How to Try It Out
+
+Clone the repository and follow the provided instructions to launch the simulation:
+
+```bash
+git clone https://github.com/leenslf/TrajectorySense.git
+# Follow the setup and run instructions in the README
