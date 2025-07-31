@@ -146,5 +146,6 @@ source install/setup.bash
 Clone the repository and follow the provided instructions to launch the simulation:
 
 ```bash
+cd workspace
 git clone https://github.com/leenslf/TrajectorySense.git
 # Follow the setup and run instructions in the README
