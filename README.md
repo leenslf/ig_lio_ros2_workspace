@@ -89,9 +89,10 @@ cd ~/ig_lio_ros2_workspace
 xhost +local:docker
 
 # Start the Docker container
-docker-compose up -d
-docker-compose exec ros2-workspace bash
+code path/to/repo/
 ```
+Then click on reopen in container and wait for build. 
+
 ### 2. Install Dependencies and Build
 
 Inside the Docker container:
@@ -133,9 +134,6 @@ source install/setup.bash
 
 2. **Start RViz for visualization (new terminal):**
    ```bash
-   docker-compose exec ros2-workspace bash
-   cd /root/workspace
-   source /opt/ros/humble/setup.bash && source install/setup.bash
    rviz2
    ```
 
@@ -146,6 +144,5 @@ source install/setup.bash
 Clone the repository and follow the provided instructions to launch the simulation:
 
 ```bash
-cd workspace
 git clone https://github.com/leenslf/TrajectorySense.git
 # Follow the setup and run instructions in the README
