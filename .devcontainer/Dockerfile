@@ -1,5 +1,5 @@
 FROM osrf/ros:humble-desktop-full
-ARG USERNAME=ges
+ARG USERNAME=DREAM
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 ARG DEBIAN_FRONTEND=noninteractive
@@ -32,6 +32,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     nano \
     gazebo \
     ros-humble-gazebo-ros-pkgs \
+    ros-humble-velodyne-gazebo-plugins \
+    ros-humble-velodyne-pointcloud \
+    ros-humble-velodyne-driver \
+    ros-humble-velodyne-msgs \
     ros-humble-navigation2 \
     ros-humble-nav2-bringup \
     ros-humble-teleop-twist-keyboard \
