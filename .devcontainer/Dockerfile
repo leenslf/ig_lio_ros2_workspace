@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libargon2-dev \
     libssl-dev \
     libx11-dev \
+    libgoogle-glog-dev \
     libgstreamer1.0-dev \
     libgstreamer-plugins-base1.0-dev \
     libgstreamer-plugins-bad1.0-dev \
@@ -31,6 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-pip \
     nano \
     gazebo \
+    ros-humble-gazebo-ros \
     ros-humble-gazebo-ros-pkgs \
     ros-humble-velodyne-gazebo-plugins \
     ros-humble-velodyne-pointcloud \
@@ -41,6 +43,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-teleop-twist-keyboard \
     ros-humble-joint-state-publisher-gui \
     ros-humble-joint-state-publisher \
+    ros-humble-robot-state-publisher \
     ros-humble-ros2-control \
     ros-humble-ros2-controllers \
     ros-humble-robot-localization && \
